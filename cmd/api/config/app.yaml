@@ -1,0 +1,50 @@
+APP:
+    NAME: telkom
+    ENV: local
+    URL: localhost
+    PORT: 8008
+    KEY: A9NaQU1yq3h!Rl9yQj&6w^P911lFHZU#
+
+# for handler cors
+ROUTE:
+    METHODS: [GET, POST, PUT, DELETE]
+    HEADERS: [Content-Type, Authorization, Authorization-ID, Accept-Key]
+    ORIGIN: [http://localhost:8282, http://localhost:8282, http://localhost:3000]
+
+# configuration database
+DATABASE:
+    READ:
+        USERNAME: postgres
+        PASSWORD: junior34
+        URL: localhost
+        PORT: 5432
+        DB_NAME: telkom_haioo
+        MAXIDLECONNS: 5
+        MAXOPENCONNS: 5
+        MAXLIFETIME: 31
+        TIMEOUT: 2
+        SSL_MODE: disable
+    WRITE:
+        USERNAME: postgres
+        PASSWORD: junior34
+        URL: localhost
+        PORT: 5432
+        DB_NAME: telkom_haioo
+        MAXIDLECONNS: 5
+        MAXOPENCONNS: 5
+        MAXLIFETIME: 31
+        TIMEOUT: 2
+        SSL_MODE: disable
+
+AUTHORIZATION:
+    JWT:
+        IS_ACTIVE: true
+        ACCESS_TOKEN_SECRET_KEY: 11JGC$K7VL6TOvt!
+        ACCESS_TOKEN_DURATION: 30
+        REFRESH_TOKEN_SECRET_KEY: G3zl^2XC0PnU62mk
+        REFRESH_TOKEN_DURATION: 365
+    PUBLIC:
+        SECRET_KEY: d5Bz#@1bXvgk4C0o
+
+KEY:
+    USER: 5EP45lgo!D6skeWADPW9ssLNcCJ$woLk
